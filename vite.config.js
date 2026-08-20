@@ -24,5 +24,8 @@ export default defineConfig(({ mode }) => {
         },
       },
     },
+    preview: {
+      allowedHosts: ['scm-rag-ui.onrender.com'],
+    },
   };
 });
