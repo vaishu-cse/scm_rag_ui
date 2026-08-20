@@ -16,7 +16,7 @@ export default defineConfig(({ mode }) => {
       proxy: {
         // Stands in for the gateway during development. Nothing reads this in production.
         '/api': {
-          target: env.VITE_API_TARGET ?? 'http://localhost:8000',
+          target: env.VITE_API_TARGET ?? 'https://scm-rag-assistant.onrender.com',
           // A remote target routes on the Host header, so it has to be rewritten to the
           // target's own. Tunnels and ingresses 404 without this; localhost doesn't care.
           changeOrigin: true,
